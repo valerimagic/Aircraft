@@ -9,6 +9,5 @@ namespace Aircraft_ASP.NET_MVC_.Data
     {
         public const int AirPlaneBrandMaxLength = 20;
         public const int AirPlaneModelMaxLength = 30;
-        public const int AirPlaneDescriptionMaxLength = 10000;
     }
 }
