@@ -9,7 +9,7 @@ using System;
 
 namespace Aircraft_ASP.NET_MVC_.Data.Migrations
 {
-    [DbContext(typeof(ApplicationDbContext))]
+    [DbContext(typeof(AircraftDbContext))]
     [Migration("00000000000000_CreateIdentitySchema")]
     partial class CreateIdentitySchema
     {
