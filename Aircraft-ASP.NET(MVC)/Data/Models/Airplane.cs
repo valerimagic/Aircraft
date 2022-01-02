@@ -8,21 +8,21 @@
 
         [Required]
         [MaxLength(AirPlaneBrandMaxLength)]
-        public string Brand { get; set; }
+        public string Brand { get; init; }
 
         [Required]
         [MaxLength(AirPlaneModelMaxLength)]
-        public string Model { get; set; }
+        public string Model { get; init; }
 
         [Required]
-        public string Description { get; set; }
+        public string Description { get; init; }
 
-        public string ImageUrl { get; set; }
+        public string ImageUrl { get; init; }
 
-        public int Year { get; set; }
+        public int Year { get; init; }
 
-        public int CategoryId { get; set; }
+        public int CategoryId { get; init; }
 
-        public Category Category { get; set; }
+        public Category Category { get; init; }
     }
 }
