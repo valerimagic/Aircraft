@@ -1,3 +1,5 @@
+using Aircraft_ASP.NET_MVC_.Infrastructure;
+
 namespace Aircraft_ASP.NET_MVC_
 {
     using Aircraft_ASP.NET_MVC_.Data;
@@ -40,6 +42,8 @@ namespace Aircraft_ASP.NET_MVC_
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.PrepareDatabase();     //folder Infrastructure -> ApplicationBuilderExtension
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -65,7 +69,7 @@ namespace Aircraft_ASP.NET_MVC_
                 endpoints.MapRazorPages();
             });
 
-            app.ApplicationServices.GetService<AircraftDbContext>().Database.Migrate();
+            //app.ApplicationServices.GetService<AircraftDbContext>().Database.Migrate();
         }
 
     }
