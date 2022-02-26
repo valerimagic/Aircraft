@@ -18,6 +18,9 @@ namespace Aircraft_ASP.NET_MVC_.Infrastructure
 
             data.Database.Migrate();
 
+
+
+
             return app;
         }
     }

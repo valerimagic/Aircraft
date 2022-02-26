@@ -23,6 +23,6 @@
 
         public int CategoryId { get; init; }
 
-        public Category Category { get; init; }
+        public Destination Category { get; init; }
     }
 }
