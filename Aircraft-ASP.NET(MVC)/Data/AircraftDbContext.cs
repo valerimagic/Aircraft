@@ -13,13 +13,13 @@ namespace Aircraft_ASP.NET_MVC_.Data
             : base(options)
         {
         }
-        public DbSet<Airplane> Airplanes { get; set; }
+        public DbSet<Aircraft> Airplanes { get; set; }
         public DbSet<Destination> Categories { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder
-                .Entity<Airplane>()
+                .Entity<Aircraft>()
                 .HasOne(c => c.Category)
                 .WithMany(c => c.Airplanes)
                 .HasForeignKey(c => c.CategoryId)

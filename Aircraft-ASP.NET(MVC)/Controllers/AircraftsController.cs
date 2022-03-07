@@ -1,10 +1,13 @@
-﻿using Aircraft_ASP.NET_MVC_.Models.Aircrafts;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Aircraft_ASP.NET_MVC_.Models.Aircrafts;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Aircraft_ASP.NET_MVC_.Controllers
 {
-    using Microsoft.AspNetCore.Mvc;
-
-    public class AircraftController : Controller
+    public class AircraftsController : Controller
     {
         public IActionResult Add() => View();
 

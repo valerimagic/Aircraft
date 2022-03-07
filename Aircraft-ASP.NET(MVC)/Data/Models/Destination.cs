@@ -6,6 +6,6 @@ namespace Aircraft_ASP.NET_MVC_.Data.Models
     {
         public int Id { get; set; }
         public string Name { get; init; }
-        public IEnumerable<Airplane> Airplanes { get; set; } = new List<Airplane>();
+        public IEnumerable<Aircraft> Airplanes { get; set; } = new List<Aircraft>();
     }
 }
