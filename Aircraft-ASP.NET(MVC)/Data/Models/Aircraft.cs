@@ -8,7 +8,7 @@
 
         [Required]
         [MaxLength(AirPlaneBrandMaxLength)]
-        public string Brand { get; set; }
+        public string Destination { get; set; }
 
         [Required]
         [MaxLength(AirPlaneModelMaxLength)]

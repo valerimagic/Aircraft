@@ -3,7 +3,7 @@
     public class AddAirplaneFormModel
     {
         
-        public string Brand { get; init; }
+        public string Destination { get; init; }
         
         public string Model { get; init; }
         
