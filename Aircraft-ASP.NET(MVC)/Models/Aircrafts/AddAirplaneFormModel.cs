@@ -1,4 +1,6 @@
-﻿namespace Aircraft_ASP.NET_MVC_.Models.Aircrafts
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Aircraft_ASP.NET_MVC_.Models.Aircrafts
 {
     public class AddAirplaneFormModel
     {
@@ -9,6 +11,7 @@
         
         public string Description { get; init; }
 
+        [Display(Name = "Add File")]
         public string ImageUrl { get; init; }
 
         public int Year { get; init; }
