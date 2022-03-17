@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Aircraft_ASP.NET_MVC_.Models.Aircrafts
 {
@@ -17,5 +18,7 @@ namespace Aircraft_ASP.NET_MVC_.Models.Aircrafts
         public int Year { get; init; }
 
         public int CategoryId { get; init; }
+
+        public IEnumerable<AirplaneCategoryViewModel> Categories { get; set; }
     }
 }
