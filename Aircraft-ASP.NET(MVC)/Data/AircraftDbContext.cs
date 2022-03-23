@@ -15,7 +15,8 @@ namespace Aircraft_ASP.NET_MVC_.Data
         }
         public DbSet<Aircraft> Airplanes { get; set; }
         public DbSet<Destination> Categories { get; set; }
-
+        public DbSet<Passengers> Passengers { get; set; }
+       
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder
