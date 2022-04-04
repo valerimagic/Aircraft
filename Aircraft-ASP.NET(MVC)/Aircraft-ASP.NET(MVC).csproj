@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Views\Home\Passengers.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="EntityFramework" Version="6.4.4" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="5.0.7" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.7" />
@@ -23,6 +27,10 @@
 
   <ItemGroup>
     <Folder Include="Pages\Aircraft\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Home\Passengers.cshtml" />
   </ItemGroup>
 
 </Project>
